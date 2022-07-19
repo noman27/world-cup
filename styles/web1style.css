@@ -1,9 +1,18 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@500&display=swap');
+
 /* common designs */
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+
+}
+a:visited{
+    color: inherit;
 }
 
 /* top banner design */
@@ -20,6 +29,8 @@ body{
 .banner-write{
     color: #FFFFFF;
     width: 30%;
+    margin-left:8% ;
+    margin-top: 4%;
 
 }
 
@@ -27,4 +38,167 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
+    margin: 0;
+}
+
+.banner-desc{
+    margin: 20px 0 ;
+}
+
+.banner-pic{
+    margin-left: 27px;
+    width: 55%;
+    margin-top: 32px;
+}
+.banner-pic img{
+    height: 613px;
+    width: 581px;
+    
+}
+
+.button{
+    background-color: #DD0000;
+    color: #FFFFFF;
+    width: 20%;
+    padding: 16px 25px;
+    border-radius: 5px;
+    margin: 0;
+}
+.fa-angle-right{
+    margin-left: 0px;
+
+}
+
+/* top banner design end */
+
+/* mid body design  */
+.mid-body{
+    margin-top: 130px;
+    display:flex;
+    margin-bottom: 130px;
+}
+.side-bar{
+    background-color: #161616;
+    height: 312px;
+    width: 312px;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.tabs-container{
+    padding: 30px;
+    text-align: center;
+}
+.tabs{
+    background-color: #FFFFFF;
+    padding: 10px 7px;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#special{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+.live-section{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px 24px;
+}
+.live-match{
+    margin-left: 27px;
+    width: 312px;
+    height: 362px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+}
+
+.small-tab{
+    border: 1px solid #161616;
+    border-radius: 5px;
+    width: 100px;
+    height: 32px;
+    text-align:center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.small-title{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.extra-info{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.extra-info img{
+    width: 7%;
+    height: 7%;
+}
+.extra-info p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
+/* mid body design end */
+
+/* footer design */
+footer{
+    background-color: #161616;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.footer-title{
+    color: #E8E8E8;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+hr{
+    margin-left: 5%;
+    margin-right: 5%;
+    width:90%;
+   border:1px solid  #fffdfda8;
+}
+
+.lower-info{
+    color: #B9B9B9;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Responsive part  */
+@media screen and(max-width:360px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-write{
+        height: 178px;
+        width: 258px;
+        margin-left: 59px;
+        margin-top: 72px;
+        border-radius: 5px;
+    } 
+    .big-title{
+        
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+
+
+    }
 }
