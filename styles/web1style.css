@@ -1,0 +1,30 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@500&display=swap');
+/* common designs */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* top banner design */
+.banner{
+    background-color: #161616;
+    width: 90%;
+    height: 646px;
+    margin-top: 50px;
+    margin-right:5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    display: flex;
+}
+.banner-write{
+    color: #FFFFFF;
+    width: 30%;
+
+}
+
+.big-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+}
