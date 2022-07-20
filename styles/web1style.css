@@ -25,6 +25,7 @@ a:visited{
     margin-left: 5%;
     border-radius: 30px;
     display: flex;
+    flex-direction: row;
 }
 .banner-write{
     color: #FFFFFF;
@@ -75,6 +76,7 @@ a:visited{
 .mid-body{
     margin-top: 130px;
     display:flex;
+    flex-direction: row;
     margin-bottom: 130px;
 }
 .side-bar{
@@ -180,14 +182,14 @@ hr{
 }
 
 /* Responsive part  */
-@media screen and(max-width:360px) {
+@media screen and (max-width:412px) {
     .banner{
         flex-direction: column;
     }
     .banner-write{
         height: 178px;
         width: 258px;
-        margin-left: 59px;
+        margin-left: 30px;
         margin-top: 72px;
         border-radius: 5px;
     } 
@@ -198,7 +200,45 @@ hr{
         line-height: 33px;
         letter-spacing: 0em;
         text-align: center;
-
-
     }
+    .button{
+        font-size: 12px;
+        width: 30%;
+        padding: 10px 20px;
+        margin-left: 65px;
+    }
+    .banner-pic img{
+        margin-top: 120px;
+        margin-left: 35px;
+        height: 245px; 
+        width: 233px; 
+    }
+    
+    /* mid body section */
+    .mid-body{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .live-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0px;        
+    }
+    .side-bar{
+        background-color: #FFFFFF;
+    }
+    .tabs{
+        border: 1px solid #E8E8E8;
+    }
+    .live-match{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    /* mid body end */
+    .lower-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
